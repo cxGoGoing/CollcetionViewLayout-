@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XCShopCell">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="124" height="190"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7AR-ST-fc3">
+                        <rect key="frame" x="0.0" y="0.0" width="124" height="190"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMK-CU-Sva">
+                        <rect key="frame" x="0.0" y="160" width="124" height="30"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="gMI-1F-7Lj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HMK-CU-Sva" secondAttribute="trailing" id="Fqq-a8-WvK"/>
+                <constraint firstAttribute="trailing" secondItem="7AR-ST-fc3" secondAttribute="trailing" id="Gc0-PC-AUG"/>
+                <constraint firstItem="7AR-ST-fc3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="K6B-oj-TZD"/>
+                <constraint firstAttribute="bottom" secondItem="HMK-CU-Sva" secondAttribute="bottom" id="jhp-vP-ZkH"/>
+                <constraint firstAttribute="bottom" secondItem="7AR-ST-fc3" secondAttribute="bottom" id="opC-4T-hXf"/>
+                <constraint firstItem="7AR-ST-fc3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tjm-Kh-oV7"/>
+                <constraint firstItem="HMK-CU-Sva" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uA1-Y7-Rrg"/>
+            </constraints>
+            <size key="customSize" width="124" height="190"/>
+            <connections>
+                <outlet property="photoView" destination="7AR-ST-fc3" id="iQ7-xh-4Ka"/>
+                <outlet property="priceLabel" destination="HMK-CU-Sva" id="8Je-ye-8hH"/>
+            </connections>
+            <point key="canvasLocation" x="323" y="308"/>
+        </collectionViewCell>
+    </objects>
+</document>
